@@ -2,7 +2,7 @@
 
 
 let guessFunc = function () {
-    function res() {
+    function result() {
         let random = Math.floor(Math.random() * 100) + 1;
         let userNum = +prompt('Угадай число от 1 до 100');
 
@@ -10,7 +10,6 @@ let guessFunc = function () {
         if (userNum < random) {
             alert('Загаданное число больше');
             userNum = +prompt('Введите число');
-
 
         } else if (userNum > random) {
             alert('Загаданное число меньше');
@@ -25,12 +24,10 @@ let guessFunc = function () {
 
         } else if (userNum === random) {
             return alert('Поздравляю, Вы угадали!!! Игра окончена');
-
         }
-
     }
 
-    return res;
+    return result;
 }
 
 let guessNumber = guessFunc();
