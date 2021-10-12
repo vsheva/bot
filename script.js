@@ -19,7 +19,7 @@ function botGame() {
             }
             return;
 
-        }  else if (num > random) {
+        } else if (num > random) {
             alert('Вы ввели число больше!');
             validNumber();
 
@@ -33,8 +33,6 @@ function botGame() {
             validNumber();
 
         }
-
-
     }
 
     validNumber();
