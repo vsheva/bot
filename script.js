@@ -7,8 +7,12 @@ function botGame() {
 
 
     function validNumber() {
-        let num = +prompt('Угадай число от 1 до 100. У Вас 10 попыток');
+        let num = prompt('Угадай число от 1 до 100. У Вас 10 попыток');
 
+        if (num === null) {
+            alert('Игра окончена');
+            return;
+        }
 
         if (attempts == 0) {
             alert('Вы исчерпали все попытки');
@@ -33,14 +37,11 @@ function botGame() {
             attempts--;
             validNumber();
 
-        } else if (!isNaN(parseFloat(num) && isFinite(num)))  {
+        } else if (!isNaN(parseFloat(num) && isFinite(num))) {
             alert('Введи число!');
             attempts--;
             validNumber();
 
-        } else if (num === null) {
-            alert('Игра окончена');
-            return;
         }
         attempts--;
 
