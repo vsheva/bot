@@ -12,7 +12,6 @@ function botGame() {
             return;
         }
 
-
         if (num === random) {
             alert('Поздравляю, Вы угадали!!!');
             if (confirm("Хотите сыграть еще ?")) {
@@ -20,7 +19,7 @@ function botGame() {
             }
             return;
 
-        } else if (num > random) {
+        }  else if (num > random) {
             alert('Вы ввели число больше!');
             validNumber();
 
