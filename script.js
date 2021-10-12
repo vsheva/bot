@@ -2,17 +2,16 @@
 
 function botGame() {
     let random = Math.floor(Math.random() * 100) + 1;
-    let attempts = 10;
 
 
     function validNumber() {
-        let num = +prompt('Угадай число от 1 до 100. У Вас 10 попыток');
+        let num = prompt('Угадай число от 1 до 100.');
 
-
-        if (attempts == 0) {
-            alert('Вы исчерпали все попытки');
+        if (num === null) {
+            alert('Игра окончена');
             return;
         }
+
 
         if (num === random) {
             alert('Поздравляю, Вы угадали!!!');
@@ -22,26 +21,20 @@ function botGame() {
             return;
 
         } else if (num > random) {
-            alert('Вы ввели число больше! Осталось попыток:' + attempts);
-            attempts--;
+            alert('Вы ввели число больше!');
             validNumber();
 
 
         } else if (num < random) {
-            alert('Вы ввели число меньше!Осталось попыток:' + attempts);
-            attempts--;
+            alert('Вы ввели число меньше!');
             validNumber();
 
-        } else if (!isNaN(parseFloat(num) && isFinite(num)))  {
+        } else if (isNaN(num)) {
             alert('Введи число!');
-            attempts--;
             validNumber();
 
-        } else if (num === null) {
-            alert('Игра окончена');
-            return;
         }
-        attempts--;
+
 
     }
 
