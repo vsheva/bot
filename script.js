@@ -1,35 +1,54 @@
 "use strict";
 
 
-let guessFunc = function () {
-    function result() {
-        let random = Math.floor(Math.random() * 100) + 1;
-        let userNum = +prompt('Угадай число от 1 до 100');
+function botGame() {
+    let random = Math.floor(Math.random() * 100) + 1;
+    let attempts = 10;
 
 
-        if (userNum < random) {
-            alert('Загаданное число больше');
-            userNum = +prompt('Введите число');
+    function validNumber() {
+        let num = +prompt('Угадай число от 1 до 100. У Вас 10 попыток');
 
-        } else if (userNum > random) {
-            alert('Загаданное число меньше');
-            userNum = +prompt('Введите число');
 
-        } else if (isNaN(userNum)) {
-            alert('Введи число!');
-            userNum = +prompt('Введите число');
-
-        } else if (userNum === null) {
-            return alert('Игра окончена');
-
-        } else if (userNum === random) {
-            return alert('Поздравляю, Вы угадали!!! Игра окончена');
+        if (attempts == 0) {
+            alert('Вы исчерпали все попытки');
+            return;
         }
+
+        if (num === random) {
+            alert('Поздравляю, Вы угадали!!!');
+            if (confirm("Хотите сыграть еще ?")) {
+                botGame();
+            }
+            return;
+
+        } else if (num > random) {
+            alert('Вы ввели число больше! Осталось попыток:' + attempts);
+            attempts--;
+            validNumber();
+
+
+        } else if (num < random) {
+            alert('Вы ввели число меньше!Осталось попыток:' + attempts);
+            attempts--;
+            validNumber();
+
+        } else if (!isNaN(parseFloat(num) && isFinite(num)))  {
+            alert('Введи число!');
+            attempts--;
+            validNumber();
+
+        } else if (num === null) {
+            alert('Игра окончена');
+            return;
+        }
+        attempts--;
+
     }
 
-    return result;
+    validNumber();
 }
 
-let guessNumber = guessFunc();
+botGame();
 
-guessNumber();
+
