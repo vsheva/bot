@@ -3,11 +3,11 @@
 
 function botGame() {
     let random = Math.floor(Math.random() * 100) + 1;
-    let attempts = 10;
+    let attempts = 9;
 
 
     function validNumber() {
-        let num = prompt('Угадай число от 1 до 100. У Вас 10 попыток');
+        let num = prompt('Угадай число от 1 до 100');
 
         if (num === null) {
             alert('Игра окончена');
@@ -37,7 +37,7 @@ function botGame() {
             attempts--;
             validNumber();
 
-        } else if (!isNaN(parseFloat(num) && isFinite(num))) {
+        } else if (isNaN(parseFloat(num))) {
             alert('Введи число!');
             attempts--;
             validNumber();
@@ -51,5 +51,3 @@ function botGame() {
 }
 
 botGame();
-
-
