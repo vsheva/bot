@@ -6,7 +6,7 @@ function botGame() {
 
 
     function validNumber() {
-        let num = prompt('Угадай число от 1 до 10');
+        let num = +prompt('Угадай число от 1 до 10');
 
         if (num === null) {
             alert('Игра окончена');
@@ -18,7 +18,7 @@ function botGame() {
             return;
         }
 
-        if (num == random) {
+        if (num === random) {
             alert('Поздравляю, Вы угадали!!!');
             if (confirm("Хотите сыграть еще ?")) {
                 botGame();
