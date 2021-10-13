@@ -7,12 +7,12 @@ function botGame() {
     function validNumber() {
         let num = prompt('Угадай число от 1 до 100.');
 
-        if (num === null) {
+        if (num == null) {
             alert('Игра окончена');
             return;
         }
 
-        if (num === random) {
+        if (num == random) {
             alert('Поздравляю, Вы угадали!!!');
             if (confirm("Хотите сыграть еще ?")) {
                 botGame();
@@ -28,11 +28,13 @@ function botGame() {
             alert('Вы ввели число меньше!');
             validNumber();
 
-        } else if (isNaN(num)) {
+        } else if (isNaN(parseFloat(num) && !isFinite(num))) {
             alert('Введи число!');
             validNumber();
 
         }
+
+
     }
 
     validNumber();
