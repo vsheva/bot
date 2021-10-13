@@ -38,7 +38,6 @@ function botGame() {
 
         } else if (isNaN(parseFloat(num))) {
             alert('Введи число!');
-            attempts--;
             validNumber();
 
         }
