@@ -31,9 +31,7 @@ function botGame() {
         } else if (isNaN(parseFloat(num) && !isFinite(num))) {
             alert('Введи число!');
             validNumber();
-
         }
-
 
     }
 
