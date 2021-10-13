@@ -7,6 +7,10 @@ function botGame() {
     function validNumber() {
         let num = prompt('Угадай число от 1 до 100.');
 
+        const isNumber = function(num) {
+            return !isNaN(parseFloat(num)) && isFinite(num);
+        }
+
         if (num == null) {
             alert('Игра окончена');
             return;
@@ -20,15 +24,15 @@ function botGame() {
             return;
 
         } else if (num > random) {
-            alert('Вы ввели число больше!');
+            alert('Загаданное число меньше!');
             validNumber();
 
 
         } else if (num < random) {
-            alert('Вы ввели число меньше!');
+            alert('Загаданное число больше!');
             validNumber();
 
-        } else if (isNaN(parseFloat(num) && !isFinite(num))) {
+        } else if (!isNumber(num)) {
             alert('Введи число!');
             validNumber();
         }
