@@ -28,9 +28,9 @@ let ourSecond = today.getSeconds();
 
 //alert(today.toLocaleString());
 
-function hourChange(value) {                                           // почему здесь нe ourHour
-  let num = value % 10;
-  if (value > 4 && value < 21) {                                        //cначала num и потом value что проверяется %
+function hourChange(value) {                                           // почему здесь нe ourHour, вместо value
+  let num = value % 10;                                                 //что проверяется %
+  if (value > 4 && value < 21) {                                        //cначала num и потом value
     return "часов";
   } else if (num > 1 && num <= 4) {
     return "часа";
@@ -43,7 +43,7 @@ function hourChange(value) {                                           // поч
 
 console.log(hourChange(ourHour))
 
-function minuteChange(value1) {
+function minuteChange(value1) {                                                 // почему здесь нe ourMinute, вместо value1
   let num = value1 % 10;
   if (value1 > 4 && value1 < 21) {
     return "минут";
@@ -58,9 +58,9 @@ function minuteChange(value1) {
 
 console.log(minuteChange(ourMinute));
 
-function secondChange(value3) {                                                  //
-  let num = value3 % 10;
-  if (value3 > 4 && value3 < 21) {
+function secondChange(value2) {                                                  //
+  let num = value2 % 10;
+  if (value2 > 4 && value2 < 21) {
     return "секунд";
   } else if (num > 1 && num <= 4) {
     return "секунды";
@@ -72,25 +72,25 @@ function secondChange(value3) {                                                 
 }
 console.log(secondChange(ourSecond));
 
+/////////////////////////////////////////////////////////////
 
-
-function addZero(numberHourMin) {                                               // как применить ноль
-  if (nuberHourMin < 10) {
-    return 0 + String(numberHourMin);
+ let addZero = function(numberHourMin) {                                               //
+  if (numberHourMin > 0 && numberHourMin < 10) {
+    return "0" + numberHourMin;
   }
   else {
     return numberHourMin
   }
 }
 
+console.log(addZero(today.getHours()) + ':' + addZero(today.getMinutes()) + ':' + addZero(today.getSeconds())+ ' ' + addZero(today.getDate()) + '.' + addZero(today.getMonth()) + '.' + today.getFullYear());
 
 
+let updateTime = function() {
+  return  day.innerHTML = ourHour + ":" + ourMinute + ":" + ourSecond;r
+}
 
-
-let timer = setInterval(() => {                                                  // не работает обновление
-
-  return  day.innerHTML = ourHour + ":" + ourMinute + ":" + ourSecond;
-}, 1000);
+let timer = setInterval(updateTime, 1000);
 
 
 
@@ -116,11 +116,3 @@ let timer = setInterval(() => {                                                 
 
 
 
-
-//console.log(wordChange(hours, ["час", "часа", "часов"]));
-// console.log(wordChange(minutes, ["минута", "минуты", "минут"]));
-// console.log(wordChange(seconds, ["секунда", "секунды", "секунд"]));
-
-
-
-//day.textContent = ` ${hours} часа  ${minutes} минуты  ${seconds} секунд`;
