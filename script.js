@@ -10,14 +10,11 @@ let ourMinute =today.getMinutes();
 let ourSecond = today.getSeconds();
 
 
-
 let weekDay = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"]
 let month = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"]
 
 
 let updateTime = function() {
-
-
 
   function getWeekDay (today) {
     let index = today.getDay();
@@ -87,7 +84,7 @@ let updateTime = function() {
 
 
 
-///////////////////////////////////////////////////////////// как прикрутить значение часов + добавить слово ?
+
 
 
 
