@@ -1,5 +1,6 @@
 "use strict";
 
+<<<<<<< HEAD
 let day = document.querySelector("#dmv");
 
 let today = new Date();
@@ -8,8 +9,16 @@ let ourYear = today.getFullYear();
 let ourHour =today.getHours();
 let ourMinute =today.getMinutes();
 let ourSecond = today.getSeconds();
+=======
+function botGame() {
+    let random = Math.floor(Math.random() * 100) + 1;
 
+>>>>>>> 48ac1e3c5b2c0b249795847f428edc78ce6499ec
 
+    function validNumber() {
+        let num = prompt('Угадай число от 1 до 100.');
+
+<<<<<<< HEAD
 let weekDay = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"]
 let month = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"]
 
@@ -66,6 +75,38 @@ let updateTime = function() {
       return "секунда";
     } else {
       return "секунд";
+=======
+        const isNumber = function(num) {
+            return !isNaN(parseFloat(num)) && isFinite(num);
+        }
+
+        if (num == null) {
+            alert('Игра окончена');
+            return;
+        }
+
+        if (num == random) {
+            alert('Поздравляю, Вы угадали!!!');
+            if (confirm("Хотите сыграть еще ?")) {
+                botGame();
+            }
+            return;
+
+        } else if (num > random) {
+            alert('Загаданное число меньше!');
+            validNumber();
+
+
+        } else if (num < random) {
+            alert('Загаданное число больше!');
+            validNumber();
+
+        } else if (!isNumber(num)) {
+            alert('Введи число!');
+            validNumber();
+        }
+
+>>>>>>> 48ac1e3c5b2c0b249795847f428edc78ce6499ec
     }
   }
   console.log(secondChange(ourSecond));
@@ -92,6 +133,7 @@ let updateTime = function() {
 
   day.innerHTML = addZero(today.getDate()) + '.' + addZero(today.getMonth()) + '.' + today.getFullYear() + "-" + addZero(today.getHours()) + ':' + addZero(today.getMinutes()) + ':' + addZero(today.getSeconds());
 
+<<<<<<< HEAD
 }
 
 
@@ -123,3 +165,9 @@ let timer = setInterval(updateTime, 1000);
 
 //return  day.innerHTML = ourHour + ":" + ourMinute + ":" + ourSecond;r
 
+=======
+    validNumber();
+}
+
+botGame();
+>>>>>>> 48ac1e3c5b2c0b249795847f428edc78ce6499ec
