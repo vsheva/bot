@@ -6,17 +6,14 @@ let today = new Date();
 
 let weekDay = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"]
 
-// function getWeekDay(today) {
-//   let index = today.getDay();
-//   return weekDay[index];
-// }
+//const day = weekDay[new Date().getDay() - 1];
 
 let greeting;
 let timeFormat = () => {
     const hour = today.getHours();
     let minute = today.getMinutes();
     let second = today.getSeconds();
-    const day = weekDay[new Date().getDay() - 1];
+    const day = weekDay[today.getDay()];
 
     if (hour >= 5 && hour < 12) {
         greeting = "Доброе утро"
