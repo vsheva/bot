@@ -1,96 +1,82 @@
 "use strict"
 
 
-let day = document.querySelector("#dmv");
-
+let currentDate = document.querySelector("#dmv1");
 let today = new Date();
-let dayOfMonth=today.getDate();
-let ourYear = today.getFullYear();
-let ourHour =today.getHours();
-let ourMinute =today.getMinutes();
-let ourSecond = today.getSeconds();
 
 let weekDay = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"]
-let month = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"]
 
+// function getWeekDay(today) {
+//   let index = today.getDay();
+//   return weekDay[index];
+// }
 
-let updateTime = function() {
+let greeting;
+let timeFormat = () => {
+    const hour = today.getHours();
+    let minute = today.getMinutes();
+    let second = today.getSeconds();
+    const day = weekDay[new Date().getDay() - 1];
 
-  function getWeekDay (today) {
-    let index = today.getDay();
-    return weekDay[index];
-  }
+    if (hour >= 5 && hour < 12) {
+        greeting = "Доброе утро"
+    } else if (hour < 18) {
+        greeting = "Добрый день"
+    } else if (hour < 24) {
+        greeting = "Добрый вечер"
+    } else if (hour >= 0 && hour < 5) {
+        greeting = "Доброй ночи"
+    }
 
-  function getTodayMonth(today) {
-    let id = today.getMonth();
-    return month[id]
-  }
+    const amPM = hour >= 12 ? 'PM' : 'AM';
 
-  function hourChange(value) {                                           // почему здесь нe ourHour, вместо value (погуглил решение) ?
-    let num = value % 10;                                                 //что проверяется % ?
-    if (value > 4 && value < 21) {                                        //cначала num и потом value ?
-      return "часов";
-    } else if (num > 1 && num <= 4) {
-      return "часа";
-    } else if (num == 1) {
-      return "час";
+    return {
+        hour,
+        minute,
+        second,
+        greeting,
+        day,
+        amPM
+    }
+};
+
+//let formatTime = today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })
+
+function getTimeRemaining() {
+    today = new Date()
+    let nextDate = new Date("1 January, 2022").getTime();
+    let dateNow = new Date().getTime();
+    let timeRemaining = (nextDate - dateNow) / 1000;
+    let days = Math.floor(timeRemaining / (60 * 60 * 24));
+
+    return {
+        timeRemaining, days
+    }
+
+}
+
+let getZero = function (num) {
+    if (num > 0 && num < 10) {
+        return "0" + num;
     } else {
-      return "часов";
+        return num
     }
-  }
-
-  console.log(hourChange(ourHour))
-
-  function minuteChange(value1) {                                                 // почему здесь нe ourMinute, вместо value1 ?
-    let num = value1 % 10;
-    if (value1 > 4 && value1 < 21) {
-      return "минут";
-    } else if (num > 1 && num <= 4) {
-      return "минуты";
-    } else if (num == 1) {
-      return "минута";
-    } else {
-      return "минут";
-    }
-  }
-
-  console.log(minuteChange(ourMinute));
-
-  function secondChange(value2) {
-    let num = value2 % 10;
-    if (value2 > 4 && value2 < 21) {
-      return "секунд";
-    } else if (num > 1 && num <= 4) {
-      return "секунды";
-    } else if (num == 1) {
-      return "секунда";
-    } else {
-      return "секунд";
-    }
-  }
-  console.log(secondChange(ourSecond));
+}
 
 
+let updateTime = function () {
+    let time = timeFormat()
+    let timer = getTimeRemaining()
 
-  let addZero = function(numberHourMin) {                                               //
-    if (numberHourMin > 0 && numberHourMin < 10) {
-      return "0" + numberHourMin;
-    }
-    else {
-      return numberHourMin
-    }
-  }
-
-
-
+    currentDate.innerHTML = ` ${time.greeting} <br>
+  Сегодня: ${time.day} <br>
+  Текущее время: ${getZero(time.hour)} : ${getZero(time.minute)} : ${getZero(time.second)} ${time.amPM}<br>
+  До нового года осталось ${timer.days} дней
+  `
+}
 
 
-
-
-
-
-
-  day.innerHTML = addZero(today.getDate()) + '.' + addZero(today.getMonth()) + '.' + today.getFullYear() + "-" + addZero(today.getHours()) + ':' + addZero(today.getMinutes()) + ':' + addZero(today.getSeconds());
+updateTime();
 
 
 
@@ -103,23 +89,4 @@ let updateTime = function() {
 
 
 
-
-
-
-
-
-// let options = {
-//   weekday: "long",
-//   year: "numeric",
-//   month: "long",
-//   day: "numeric",
-// };
-//
-
-//day.textContent = `Сегодня ${today.toLocaleString("ru", options)}, ${hours} часа  ${minutes} минуты  ${seconds}, секунд`;
-
-//alert(today.toLocaleDateString("en-US", options));
-//alert(today.toLocaleString());
-
-//return  day.innerHTML = ourHour + ":" + ourMinute + ":" + ourSecond;r
 
