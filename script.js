@@ -1,6 +1,5 @@
 "use strict"
 
-
 let currentDate = document.querySelector("#dmv1");
 let today = new Date();
 
@@ -74,6 +73,39 @@ let updateTime = function () {
 
 
 updateTime();
+
+
+// debounce
+
+
+let inp = document.querySelector("input");
+let p = document.querySelector("p");
+let timeout;
+
+function enteringText() {
+    let text = inp.value;
+    if (timeout) {
+        clearTimeout(timeout);
+    }
+    timeout = setTimeout(() => {
+        p.innerHTML = text;
+    }, 300);
+}
+
+function clearingInput() {
+    p.innerHTML = "";
+}
+
+inp.addEventListener("input", enteringText);
+
+
+
+
+
+
+
+
+
 
 
 
