@@ -1,106 +1,41 @@
 "use strict"
 
-let currentDate = document.querySelector("#dmv1");
-let today = new Date();
+const img = document.querySelector('img');
+const start = document.getElementById('start');
+const reset = document.getElementById('reset');
+let count = 0;
+let animation;
+let active = false;
 
-let weekDay = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"]
 
-//const day = weekDay[new Date().getDay() - 1];
-
-let greeting;
-let timeFormat = () => {
-    const hour = today.getHours();
-    let minute = today.getMinutes();
-    let second = today.getSeconds();
-    const day = weekDay[today.getDay()];
-
-    if (hour >= 5 && hour < 12) {
-        greeting = "Доброе утро"
-    } else if (hour < 18) {
-        greeting = "Добрый день"
-    } else if (hour < 24) {
-        greeting = "Добрый вечер"
-    } else if (hour >= 0 && hour < 5) {
-        greeting = "Доброй ночи"
-    }
-
-    const amPM = hour >= 12 ? 'PM' : 'AM';
-
-    return {
-        hour,
-        minute,
-        second,
-        greeting,
-        day,
-        amPM
-    }
-};
-
-//let formatTime = today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })
-
-function getTimeRemaining() {
-    today = new Date()
-    let nextDate = new Date("1 January, 2022").getTime();
-    let dateNow = new Date().getTime();
-    let timeRemaining = (nextDate - dateNow) / 1000;
-    let days = Math.floor(timeRemaining / (60 * 60 * 24));
-
-    return {
-        timeRemaining, days
-    }
-
-}
-
-let getZero = function (num) {
-    if (num > 0 && num < 10) {
-        return "0" + num;
+const carMotion = () => {
+    animation = requestAnimationFrame(carMotion);
+    count++;
+    if (count < 97) {
+        img.style.left = count * 10 + 'px';
     } else {
-        return num
+        cancelAnimationFrame(animation);
     }
 }
 
 
-let updateTime = function () {
-    let time = timeFormat()
-    let timer = getTimeRemaining()
-
-    currentDate.innerHTML = ` ${time.greeting} <br>
-  Сегодня: ${time.day} <br>
-  Текущее время: ${getZero(time.hour)} : ${getZero(time.minute)} : ${getZero(time.second)} ${time.amPM}<br>
-  До нового года осталось ${timer.days} дней
-  `
-}
-
-
-updateTime();
-
-
-// debounce
-
-
-let inp = document.querySelector("input");
-let p = document.querySelector("p");
-let timeout;
-
-function enteringText() {
-    let text = inp.value;
-    if (timeout) {
-        clearTimeout(timeout);
+start.addEventListener('click', () => {
+    if (active === false) {
+        animation = requestAnimationFrame(carMotion);
+        active = true;
+    } else {
+        active = false;
+        cancelAnimationFrame(animation);
     }
-    timeout = setTimeout(() => {
-        p.innerHTML = text;
-    }, 300);
-}
-
-function clearingInput() {
-    p.innerHTML = "";
-}
-
-inp.addEventListener("input", enteringText);
+})
 
 
-
-
+reset.addEventListener('click', () => {
+    count = 0;
+    active = false;
+    cancelAnimationFrame(animation);
+    img.removeAttribute('style');
+})
 
 
 
