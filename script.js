@@ -24,18 +24,19 @@ start.addEventListener('click', () => {
         animation = requestAnimationFrame(carMotion);
         active = true;
     } else {
-        active = false;
         cancelAnimationFrame(animation);
+        active = false;
     }
 })
 
 
 reset.addEventListener('click', () => {
+    cancelAnimationFrame(animation);
+    img.style.left = 0 + "px"
     count = 0;
     active = false;
-    cancelAnimationFrame(animation);
-    img.removeAttribute('style');
 })
+
 
 
 
