@@ -21,7 +21,7 @@ const carMotion = () => {
 
 
 start.addEventListener('click', () => {
-    if (active === false) {
+    if (active != true) {
         animation = requestAnimationFrame(carMotion);
         active = true;
     } else {
