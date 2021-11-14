@@ -11,8 +11,9 @@ let active = false;
 const carMotion = () => {
     animation = requestAnimationFrame(carMotion);
     count++;
-    if (count < 97) {
-        img.style.left = count * 10 + 'px';
+    console.log(count)
+    if (count < 120) {
+        img.style.left = count * 8 + 'px';
     } else {
         cancelAnimationFrame(animation);
     }
