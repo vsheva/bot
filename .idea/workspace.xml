@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="679f2310-5b50-4efc-b2bd-0784ee054be7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax-fetch/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax-fetch/.idea/ajax-fetch.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax-fetch/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax-fetch/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax-fetch/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fetch_draft/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fetch_draft/.idea/fetch.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fetch_draft/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fetch_draft/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fetch_draft/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fetch_draft/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fetch_draft/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fetch_draft/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fetch-promises/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../fetch-promises/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fetch-promises/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../fetch-promises/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fetch/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fetch/.idea/fetch.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fetch/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fetch/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fetch/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fetch/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fetch/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fetch/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jshintrc" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ypVSh8yrAyvntY8fyQvwCu6HG9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jsx.switch.disabled" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager" selected="Node.js.script.js">
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/glo-bot/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="script.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/script.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.script.js" />
+        <item itemvalue="JavaScript Debug.index.html (1)" />
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="679f2310-5b50-4efc-b2bd-0784ee054be7" name="Default Changelist" comment="" />
+      <created>1632948517693</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632948517693</updated>
+      <workItem from="1632948519115" duration="954000" />
+      <workItem from="1632949492121" duration="4790000" />
+      <workItem from="1633030233352" duration="596000" />
+      <workItem from="1633035213856" duration="1398000" />
+      <workItem from="1633037020006" duration="334000" />
+      <workItem from="1633037367748" duration="803000" />
+      <workItem from="1633038186702" duration="338000" />
+      <workItem from="1633038537080" duration="2783000" />
+      <workItem from="1633041489442" duration="260000" />
+      <workItem from="1633041879454" duration="829000" />
+      <workItem from="1633042763588" duration="9000" />
+      <workItem from="1633042858929" duration="97000" />
+      <workItem from="1633043142170" duration="10000" />
+      <workItem from="1633044379992" duration="596000" />
+      <workItem from="1633046937176" duration="1382000" />
+      <workItem from="1633103110686" duration="2190000" />
+      <workItem from="1633112020643" duration="398000" />
+      <workItem from="1633112528722" duration="3000" />
+      <workItem from="1633112675514" duration="59000" />
+      <workItem from="1633112779627" duration="10607000" />
+      <workItem from="1633297720120" duration="30426000" />
+      <workItem from="1633451672967" duration="45260000" />
+      <workItem from="1633557991825" duration="2337000" />
+      <workItem from="1633560359271" duration="637000" />
+      <workItem from="1633561012394" duration="481000" />
+      <workItem from="1633561510125" duration="429000" />
+      <workItem from="1633562005179" duration="713000" />
+      <workItem from="1633723609208" duration="9862000" />
+      <workItem from="1633973572011" duration="81000" />
+      <workItem from="1633979129308" duration="1333000" />
+      <workItem from="1634041613770" duration="27874000" />
+      <workItem from="1634739664469" duration="2978000" />
+      <workItem from="1634760881293" duration="2451000" />
+      <workItem from="1634766488516" duration="206000" />
+      <workItem from="1634766707231" duration="711000" />
+      <workItem from="1634840608246" duration="12127000" />
+      <workItem from="1634904467946" duration="2851000" />
+      <workItem from="1635020730973" duration="414000" />
+      <workItem from="1635021891553" duration="29774000" />
+      <workItem from="1635149630645" duration="2880000" />
+      <workItem from="1636103183686" duration="1761000" />
+      <workItem from="1636104967820" duration="1355000" />
+      <workItem from="1636107377283" duration="29000" />
+      <workItem from="1636239165913" duration="226000" />
+      <workItem from="1636239405205" duration="399000" />
+      <workItem from="1636760958874" duration="13654000" />
+      <workItem from="1636829203397" duration="1190000" />
+      <workItem from="1636845146080" duration="28127000" />
+      <workItem from="1636949202278" duration="4713000" />
+      <workItem from="1636973369414" duration="5942000" />
+      <workItem from="1637058083488" duration="1923000" />
+      <workItem from="1637830758944" duration="4547000" />
+      <workItem from="1637882490197" duration="35000" />
+      <workItem from="1638138914024" duration="10364000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="500" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1638149176369">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="500" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1638149176369" />
+    <state x="94" y="94" width="1349" height="637" key="DiffContextDialog" timestamp="1633298194957">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="94" y="94" width="1349" height="637" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1633298194957" />
+    <state x="550" y="168" key="FileChooserDialogImpl" timestamp="1637079521944">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="550" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1637079521944" />
+    <state width="1515" height="244" key="GridCell.Tab.0.bottom" timestamp="1635117852607">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="244" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635117852607" />
+    <state width="1515" height="244" key="GridCell.Tab.0.center" timestamp="1635117852607">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="244" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1635117852607" />
+    <state width="1515" height="244" key="GridCell.Tab.0.left" timestamp="1635117852607">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="244" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1635117852607" />
+    <state width="1515" height="244" key="GridCell.Tab.0.right" timestamp="1635117852607">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="244" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1635117852607" />
+    <state x="278" y="57" key="SettingsEditor" timestamp="1633729736669">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="278" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1633729736669" />
+    <state x="426" y="188" key="run.anything.popup" timestamp="1638147326395">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="426" y="188" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1638147326395" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1633538831376">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1633538831376" />
+  </component>
+</project>
